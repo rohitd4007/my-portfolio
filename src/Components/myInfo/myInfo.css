@@ -1,0 +1,63 @@
+/* src/MyInfo.css */
+.info-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    margin: 2rem;
+}
+
+.text-content {
+    text-align: left;
+}
+
+.greeting {
+    font-size: 2.5rem;
+    color: #ff5e57;
+    margin-bottom: 1rem;
+}
+
+.greeting-name {
+    /* color: #05c46b; */
+
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    color: #182C61;
+    font-weight: 800;
+}
+
+.description {
+    font-size: 1.5rem;
+    color: #182C61;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.name-topic {
+    color: #B53471;
+}
+
+.stack {
+    font-size: 1.2rem;
+    color: #007bff;
+}
+
+.download-button {
+    padding: 0.75rem 0.5rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #B53471;
+    border: none;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    align-self: flex-end;
+}
+
+.download-button:hover {
+    background-color: #ec4090;
+}

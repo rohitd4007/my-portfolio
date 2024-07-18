@@ -1,0 +1,22 @@
+.project-container {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-heading {
+    font-weight: 600;
+    color: #006266;
+    padding: 1rem;
+    border-bottom: 5px solid #422930;
+    text-transform: uppercase;
+}
+
+.coming-soon-text {
+    margin-top: 100px;
+    color: #c44569;
+    font-size: 22px;
+    font-weight: 600;
+    padding: 1rem;
+}
