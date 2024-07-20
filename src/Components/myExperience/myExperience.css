@@ -1,11 +1,12 @@
-.project-container {
+.about-container {
     height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.project-heading {
+.about-heading {
+    text-align: center;
     font-weight: 600;
     color: #006266;
     padding: 1rem;

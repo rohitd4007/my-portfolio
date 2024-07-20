@@ -36,3 +36,9 @@
     color: #000000;
     border-bottom: 2px solid #90a2b6;
 }
+
+@media (max-width: 600px) {
+    .navbar {
+        display: none;
+    }
+}

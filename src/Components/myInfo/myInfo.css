@@ -5,6 +5,7 @@
     align-items: center;
     padding: 1rem;
     margin: 2rem;
+    margin-top: 4rem;
 }
 
 .text-content {
@@ -18,12 +19,9 @@
 }
 
 .greeting-name {
-    /* color: #05c46b; */
-
     font-size: 4rem;
     text-transform: uppercase;
     letter-spacing: 3px;
-    text-align: center;
     color: #182C61;
     font-weight: 800;
 }
@@ -60,4 +58,38 @@
 
 .download-button:hover {
     background-color: #ec4090;
+}
+
+
+@media (max-width: 600px) {
+    .info-container {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .text-content {
+        text-align: center;
+    }
+
+    .download-button {
+        align-self: center;
+        margin-top: 2rem;
+    }
+
+    .greeting {
+        font-size: 2rem;
+    }
+
+    .greeting-name {
+        font-size: 1.5rem;
+    }
+
+    .description {
+        font-size: 1.2rem;
+    }
+
+    .stack {
+        font-size: 1rem;
+    }
 }
