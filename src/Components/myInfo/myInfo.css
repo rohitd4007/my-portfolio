@@ -66,6 +66,7 @@
         flex-direction: column;
         align-items: center;
         margin: 0;
+        margin-top: 2rem;
     }
 
     .text-content {
@@ -83,15 +84,21 @@
     }
 
     .greeting-name {
-        font-size: 1.5rem;
+        font-size: 2rem;
         margin-top: 2rem;
+        line-height: 3rem;
     }
 
     .description {
         font-size: 1.2rem;
+        line-height: 2rem;
     }
 
     .stack {
         font-size: 1rem;
+    }
+
+    .download-button {
+        margin-top: 3rem;
     }
 }
