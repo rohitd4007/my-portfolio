@@ -1,8 +1,11 @@
+.about-body {
+    background-color: #ffffff;
+}
+
 .about-container {
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 6rem;
 }
 
 .about-heading {
@@ -13,12 +16,48 @@
     border-bottom: 5px solid #422930;
     border-radius: 8px;
     text-transform: uppercase;
+    width: fit-content;
+    margin: auto;
 }
 
-.coming-soon-text {
-    margin-top: 100px;
-    color: #c44569;
-    font-size: 22px;
-    font-weight: 600;
+.about-text {
+    text-align: justify;
+    margin: auto;
     padding: 1rem;
+    font-family: cursive;
+    font-size: 1.2rem;
+    margin-top: 1.2rem;
+}
+
+.experience-education-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.2rem;
+    margin-top: 2rem;
+}
+
+.education-section,
+.work-experience-section {
+    width: 48%;
+    text-align: justify;
+}
+
+.section-heading {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #c23616;
+    padding-bottom: 5px;
+    width: fit-content;
+}
+
+.experience h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.experience p {
+    margin-bottom: 10px;
+    line-height: 1.5;
 }
