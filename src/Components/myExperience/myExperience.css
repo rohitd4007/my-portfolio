@@ -23,10 +23,9 @@
 .about-text {
     text-align: justify;
     margin: auto;
-    padding: 1rem;
-    font-family: cursive;
-    font-size: 1.2rem;
+    font-family: Inter;
     margin-top: 1.2rem;
+    font-size: 1.2em;
 }
 
 .experience-education-container {
@@ -60,4 +59,17 @@
 .experience p {
     margin-bottom: 10px;
     line-height: 1.5;
+}
+
+
+
+@media (max-width: 600px) {
+    .experience-education-container {
+        flex-direction: column;
+    }
+
+    .education-section,
+    .work-experience-section {
+        width: 100%;
+    }
 }
