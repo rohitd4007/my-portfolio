@@ -4,6 +4,8 @@ import MyExperience from './Components/myExperience/myExperience';
 import MyHeader from './Components/myHeader/myHeader';
 import MyInfo from './Components/myInfo/myInfo';
 import MyProject from './Components/myProjects/myProjects';
+import ContactForm from './Components/reachMe/contactForm';
+import Skills from './Components/mySkills/skills';
 
 function App() {
   return (
@@ -17,6 +19,12 @@ function App() {
       </div>
       <div id='projects'>
         <MyProject />
+      </div>
+      <div id='skills'>
+        <Skills />
+      </div>
+      <div id='contact'>
+        <ContactForm />
       </div>
     </div>
   );

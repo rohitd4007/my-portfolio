@@ -1,0 +1,103 @@
+.contact-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000000;
+}
+
+.contact-form {
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    text-align: left;
+}
+
+.contact-form h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #ffffff;
+    text-align: left;
+}
+
+.contact-form p {
+    margin-bottom: 20px;
+    color: #cccccc;
+    font-size: 14px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.name-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.name-group .form-group {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.name-group .form-group:last-child {
+    margin-right: 0;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #2b2b2b;
+    border: 1px solid #444444;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #888888;
+}
+
+.form-group textarea {
+    resize: vertical;
+    height: 120px;
+}
+
+.submit-button {
+    padding: 12px;
+    background-color: #3a3a3a;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.submit-button:hover {
+    background-color: #e74c3c;
+    color: #ecf0f1;
+    font-weight: bold;
+}
+
+.submit-button::after {
+    content: ' →';
+    font-size: 18px;
+    padding-left: 10px;
+}
