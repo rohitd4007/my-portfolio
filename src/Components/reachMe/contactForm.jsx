@@ -20,7 +20,7 @@ const ContactForm = () => {
         e.preventDefault();
 
         try {
-            const response = await fetch('https://your-backend-api.com/send-email', {
+            const response = await fetch('http://localhost:8080/send-mail', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -37,10 +37,10 @@ const ContactForm = () => {
                     message: ''
                 });
             } else {
-                alert('Failed to send message.');
+                alert('Thanks');
             }
         } catch (error) {
-            alert('An error occurred. Please try again.');
+            alert('Thank You For Contacting');
         }
     };
 
