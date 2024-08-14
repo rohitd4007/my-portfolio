@@ -30,13 +30,13 @@
 .navbar-item a {
     text-decoration: none;
     font-size: 18px;
-    color: #2d3b47ba;
+    color: #2d3;
     font-weight: bold;
     transition: color 0.3s ease, border-bottom 0.3s ease;
 }
 
 .navbar-item a:hover {
-    color: #000000;
+    color: #ffffff;
     border-bottom: 2px solid #90a2b6;
 }
 
