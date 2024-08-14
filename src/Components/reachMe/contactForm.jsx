@@ -22,6 +22,7 @@ const ContactForm = () => {
         try {
             const response = await fetch('https://send-mail-beta.vercel.app/api/send-mail/', {
                 method: 'POST',
+                mode: 'no-cors', // No CORS mode
                 headers: {
                     'Content-Type': 'application/json',
                 },
