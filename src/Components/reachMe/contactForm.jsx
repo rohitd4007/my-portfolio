@@ -20,7 +20,7 @@ const ContactForm = () => {
         e.preventDefault();
 
         try {
-            const response = await fetch('https://send-mail-beta.vercel.app/api/send-mail', {
+            const response = await fetch('/https://send-mail-beta.vercel.app/api/send-mail/', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
