@@ -1,11 +1,12 @@
 .about-body {
-    background-color: #ffffff;
+    background-image: url('../../Resource/pr9.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 .about-container {
     max-width: 80%;
     margin: 0 auto;
-    margin-top: 6rem;
 }
 
 .about-heading {

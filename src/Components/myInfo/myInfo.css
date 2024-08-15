@@ -3,9 +3,11 @@
     justify-content: space-around;
     align-items: center;
     padding: 1rem;
-    margin: 2rem;
-    margin-top: 1rem;
-    height: 70vh;
+    height: 90vh;
+    background-image: url('../../Resource/pr5.jpg');
+    background-size: cover;
+    background-position: center;
+    flex-direction: row-reverse;
 }
 
 .text-content {
@@ -53,7 +55,7 @@
     cursor: pointer;
     text-decoration: none;
     transition: background-color 0.3s ease;
-    align-self: flex-end;
+    /* align-self: flex-end; */
 }
 
 .download-button:hover {
@@ -66,7 +68,6 @@
         flex-direction: column;
         align-items: center;
         margin: 0;
-        margin-top: 2rem;
     }
 
     .text-content {

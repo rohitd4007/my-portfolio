@@ -2,9 +2,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem;
+    padding: 1rem;
     align-items: center;
     text-transform: uppercase;
+    background: rgba(0, 0, 0, 0.7);
 }
 
 .my-logo {

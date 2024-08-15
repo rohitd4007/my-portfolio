@@ -13,9 +13,9 @@ const MyInfo = () => {
     return (
         <div className="info-container">
             <div className="text-content">
-                <h1 className="greeting">Hey There ! <div className='greeting-name'><div>I am </div>Rohit Devhare</div></h1>
-                <p className="description">I am a Passionate Software Developer, </p>
-                <p className="description"> I work in <span className='name-topic'>MERN</span> Stack </p>
+                <h1 className="greeting">Hello World! <div className='greeting-name'><div>I’m  </div>Rohit Devhare</div></h1>
+                <p className="description">a passionate software developer  specializing in </p>
+                <p className="description">the <span className='name-topic'>MERN</span> Stack </p>
             </div>
             <button className="download-button" onClick={handleDownload}>Download My Resume</button>
         </div>
