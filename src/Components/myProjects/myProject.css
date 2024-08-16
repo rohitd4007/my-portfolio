@@ -14,7 +14,7 @@
 .projects-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 2rem;
     justify-content: center;
 }
 
@@ -35,7 +35,7 @@
 
 .project-image {
     width: 100%;
-    height: auto;
+    height: 10rem;
     border-radius: 10px;
 }
 

@@ -1,7 +1,8 @@
 import React from 'react';
 import './myProject.css'
 import pr1 from '../../Resource/pr1.png';
-import csoon from '../../Resource/csoon.avif'
+import pr121 from '../../Resource/pr121.png';
+import pr122 from '../../Resource/pr122.png'
 
 const MyProjects = () => {
     return (
@@ -15,16 +16,16 @@ const MyProjects = () => {
                     <a href="https://test-you-cs.netlify.app/" className="project-link">View Project</a>
                 </div>
                 <div className="project-card">
-                    <img src={csoon} alt="Project 2" className="project-image" />
-                    <h3 className="project-name">Project 2 Name</h3>
-                    <p className="project-description">Short description for project 2.</p>
-                    <a href="#project" className="project-link">View Project</a>
+                    <img src={pr121} alt="Project 2" className="project-image" />
+                    <h3 className="project-name">My Portfolio</h3>
+                    <p className="project-description">A Web application to showcase my skills & recent work</p>
+                    <a href="https://rohit-devhare-portfolio.netlify.app/" className="project-link">View Project</a>
                 </div>
                 <div className="project-card">
-                    <img src={csoon} alt="Project 3" className="project-image" />
-                    <h3 className="project-name">Project 3 Name</h3>
-                    <p className="project-description">Short description for project 3.</p>
-                    <a href="#project" className="project-link">View Project</a>
+                    <img src={pr122} alt="Project 3" className="project-image" />
+                    <h3 className="project-name">Chat-Bot For Covid FAQ</h3>
+                    <p className="project-description">Chatbot Application for Covid Related Queries</p>
+                    <a href="https://rohitd4007.github.io/covid-chat-bot/" className="project-link">View Project</a>
                 </div>
             </div>
         </div>
