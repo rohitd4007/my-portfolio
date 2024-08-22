@@ -10,16 +10,22 @@ const MyProjects = () => {
             <h2 className="projects-heading">My Projects</h2>
             <div className="projects-grid">
                 <div className="project-card">
-                    <img src={pr1} alt="Test Your CS" className="project-image" />
-                    <h3 className="project-name">Test Your CS</h3>
-                    <p className="project-description">A quiz application to test your knowledge of Computer Science concepts.</p>
-                    <a href="https://test-you-cs.netlify.app/" className="project-link">View Project</a>
+                    <img src={pr123} alt="tte-flect-app" className="project-image" />
+                    <h3 className="project-name">Tee Flect</h3>
+                    <p className="project-description">A e-commerce application for T-shirts</p>
+                    <a href="https://tee-flect.netlify.app/" className="project-link">View Project</a>
                 </div>
                 <div className="project-card">
                     <img src={pr121} alt="Project 2" className="project-image" />
                     <h3 className="project-name">My Portfolio</h3>
                     <p className="project-description">A Web application to showcase my skills & recent work</p>
                     <a href="https://rohit-devhare-portfolio.netlify.app/" className="project-link">View Project</a>
+                </div>
+                <div className="project-card">
+                    <img src={pr1} alt="Test Your CS" className="project-image" />
+                    <h3 className="project-name">Test Your CS</h3>
+                    <p className="project-description">A quiz application to test your knowledge of Computer Science concepts.</p>
+                    <a href="https://test-you-cs.netlify.app/" className="project-link">View Project</a>
                 </div>
                 <div className="project-card">
                     <img src={pr122} alt="Project 3" className="project-image" />
