@@ -3,6 +3,8 @@ import './myProject.css'
 import pr1 from '../../Resource/pr1.png';
 import pr121 from '../../Resource/pr121.png';
 import pr122 from '../../Resource/pr122.png'
+import pr123 from '../../Resource/pr123.png'
+
 
 const MyProjects = () => {
     return (
