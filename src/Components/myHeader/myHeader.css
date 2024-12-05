@@ -31,7 +31,7 @@
 .navbar-item a {
     text-decoration: none;
     font-size: 18px;
-    color: #2d3;
+    color: #c1c1c1;
     font-weight: bold;
     transition: color 0.3s ease, border-bottom 0.3s ease;
 }
