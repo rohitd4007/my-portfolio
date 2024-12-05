@@ -73,11 +73,6 @@
         text-align: center;
     }
 
-    .download-button {
-        align-self: center;
-        margin-top: 2rem;
-    }
-
     .greeting {
         margin-top: 2rem;
         font-size: 2rem;
@@ -96,9 +91,5 @@
 
     .stack {
         font-size: 1rem;
-    }
-
-    .download-button {
-        margin-top: 3rem;
     }
 }
