@@ -31,6 +31,12 @@ const cards = [
         skills: [
             { label: 'React', level: 80 },
             { label: 'Node', level: 75 },
+            { label: 'Next.js', level: 60 },
+            { label: 'JavaScript', level: 70 },
+            { label: 'MongoDB', level: 70 },
+            { label: 'Redux', level: 80 },
+            { label: 'Express', level: 70 },
+            { label: 'API Development', level: 70 },
             { label: 'AWS', level: 60 },
             { label: 'Docker', level: 50 }
         ]
