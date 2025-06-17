@@ -39,21 +39,6 @@ const cards = [
 
 export default function MyExperience() {
     const [index, setIndex] = useState(0);
-    const [currentIndex, setCurrentIndex] = useState(0);
-
-    const totalCards = 4;
-
-    const handleNext = () => {
-        if (currentIndex < totalCards - 1) {
-            setCurrentIndex(currentIndex + 1);
-        }
-    };
-
-    const handlePrev = () => {
-        if (currentIndex > 0) {
-            setCurrentIndex(currentIndex - 1);
-        }
-    };
 
     const prev = () => setIndex((i) => (i - 1 + cards.length) % cards.length);
     const next = () => setIndex((i) => (i + 1) % cards.length);
@@ -61,9 +46,9 @@ export default function MyExperience() {
     return (
         <section className="about-carousel">
             <div className='secton-container'>
-                <button className="arrow left" onClick={handlePrev}>&larr;</button>
+                <button className="arrow left" onClick={prev}>&larr;</button>
                 <h2 className="section-title">ABOUT ME</h2>
-                <button className="arrow right" onClick={handleNext}>&rarr;</button>
+                <button className="arrow right" onClick={next}>&rarr;</button>
             </div>
             <div className="carousel-container">
                 {cards.map((card, i) => (
