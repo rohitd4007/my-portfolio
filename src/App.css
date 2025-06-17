@@ -1,4 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Poppins:wght@300;400;600;700&family=Great+Vibes&display=swap');
+
+body {
+    /* margin: 0;
+    padding: 0; */
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0d1b2a 0%, #1e2a38 50%, #111a26 100%);
+    background-attachment: fixed;
+    color: white;
+    overflow-x: hidden;
+}
+
 .app-container {
-    text-align: center;
-    font-family: Inter;
+    width: 100% !important;
 }

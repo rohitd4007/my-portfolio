@@ -1,7 +1,6 @@
 import './App.css';
 import './index.css'
 import MyExperience from './Components/myExperience/myExperience';
-import MyHeader from './Components/myHeader/myHeader';
 import MyInfo from './Components/myInfo/myInfo';
 import MyProject from './Components/myProjects/myProjects';
 import ContactForm from './Components/reachMe/contactForm';
@@ -9,8 +8,7 @@ import Skills from './Components/mySkills/skills';
 
 function App() {
   return (
-    <div className="app-container">
-      <MyHeader />
+    <div className="app-container" style={{ width: '100%' }}>
       <div id='home'>
         <MyInfo />
       </div>

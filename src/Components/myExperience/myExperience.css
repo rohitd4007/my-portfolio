@@ -1,76 +1,188 @@
-.about-body {
-    background-image: #c0c0cc;
-    background-size: cover;
-    background-position: center;
-}
+/* AboutCarousel.css */
 
-.about-container {
-    max-width: 80%;
-    margin: 0 auto;
-}
-
-.about-heading {
+.about-carousel {
+    padding: 2rem 0;
+    background: #0f0f19;
+    color: #f0f0f0;
     text-align: center;
-    font-weight: 600;
-    color: #006266;
-    padding: 1rem;
-    border-bottom: 5px solid #422930;
-    border-radius: 8px;
-    text-transform: uppercase;
-    width: fit-content;
-    margin: auto;
+    position: relative;
+    overflow: hidden;
 }
 
-.about-text {
-    text-align: justify;
-    margin: auto;
-    font-family: Inter;
-    margin-top: 1.2rem;
-    font-size: 1.2em;
-}
-
-.experience-education-container {
+.secton-container {
     display: flex;
-    justify-content: space-between;
-    gap: 1.2rem;
-    margin-top: 2rem;
+    justify-content: center;
 }
 
-.education-section,
-.work-experience-section {
-    width: 48%;
-    text-align: justify;
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 2px;
+    background: linear-gradient(90deg, #ff6b6b, #a855f7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.section-heading {
-    font-size: 1.8em;
-    margin-bottom: 10px;
-    color: #c23616;
-    padding-bottom: 5px;
-    width: fit-content;
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    position: relative;
+    padding: 0 1rem;
 }
 
-.experience h3 {
-    font-size: 1.2em;
-    font-weight: bold;
-    margin-bottom: 5px;
-    color: #333;
+.arrow {
+    background: none;
+    border: none;
+    font-size: 2.5rem;
+    color: #666;
+    cursor: pointer;
+    transition: color 0.3s;
+    z-index: 10;
 }
 
-.experience p {
-    margin-bottom: 10px;
-    line-height: 1.5;
+.arrow:hover {
+    color: #fff;
 }
 
+.carousel-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+}
 
+.card {
+    flex: 0 0 320px;
+    margin: 0 0.5rem;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 2rem 1.5rem;
+    transition: transform 0.4s, opacity 0.4s;
+    opacity: 0.3;
+}
 
-@media (max-width: 600px) {
-    .experience-education-container {
-        flex-direction: column;
+.card.active {
+    opacity: 1;
+    transform: scale(1.05);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+}
+
+.intro-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro-card img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    object-fit: cover;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.intro-card h3 {
+    font-size: 1.375rem;
+    margin: 0.5rem 0;
+    color: #ff6b6b;
+}
+
+.intro-card p {
+    font-size: 1rem;
+    color: #ddd;
+}
+
+.edu-card,
+.exp-card,
+.skills-card {
+    text-align: left;
+}
+
+.edu-card h3,
+.exp-card h3,
+.skills-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: #a855f7;
+}
+
+.edu-entry,
+.exp-entry {
+    display: flex;
+    gap: 1rem;
+    margin: 0.75rem 0;
+}
+
+.icon {
+    font-size: 1.6rem;
+    color: #ff6b6b;
+    width: 1.6rem;
+}
+
+.edu-entry div strong,
+.exp-entry div strong {
+    display: block;
+    color: #eee;
+    font-size: 1rem;
+}
+
+.edu-entry div p,
+.exp-entry div span,
+.exp-entry div p {
+    margin: 0.25rem 0;
+    color: #ccc;
+    font-size: 0.9rem;
+}
+
+.skills-card .skill-map {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.skill-entry {
+    display: flex;
+    flex-direction: column;
+}
+
+.skill-entry span {
+    font-size: 0.9rem;
+    color: #ddd;
+}
+
+.bar {
+    width: 100%;
+    height: 6px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+    margin-top: 4px;
+}
+
+.fill {
+    height: 100%;
+    background: #ff6b6b;
+    border-radius: 3px;
+}
+
+@media (max-width: 768px) {
+    .carousel-container {
+        /* grid-template-columns: 1fr; */
+        justify-content: unset;
+        overflow: auto;
     }
 
-    .education-section,
-    .work-experience-section {
-        width: 100%;
+    .arrow {
+        display: none;
+    }
+
+    .card {
+        flex: 0 0 280px;
+        margin: 0 0.25rem;
+        opacity: 1 !important;
     }
 }
