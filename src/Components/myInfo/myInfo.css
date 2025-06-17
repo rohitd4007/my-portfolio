@@ -15,7 +15,8 @@
     background: transparent;
     padding: 1rem 2rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
     backdrop-filter: blur(10px);
     z-index: 100;
     border-bottom: #07121f 0.4px solid;
@@ -29,14 +30,15 @@
     padding: 0;
 }
 
-.navbar li {
+.navbar li a {
+    text-decoration: none;
     color: #fff;
     font-weight: 500;
     cursor: pointer;
     transition: all 0.3s;
 }
 
-.navbar li:hover {
+.navbar li a:hover {
     color: #ff6b6b;
 }
 
@@ -214,12 +216,23 @@
     }
 
     .navbar {
-        justify-content: flex-end;
-        padding: 1rem;
+        justify-content: space-between;
     }
 
     .hero-section {
         height: auto;
         padding: 1rem 0 1rem 0;
     }
+}
+
+.my-logo {
+    font-size: small;
+    font-weight: bolder;
+    margin-left: 1rem;
+    padding: 8px;
+    background-color: #FD7272;
+    border-radius: 50%;
+    letter-spacing: 2px;
+    font-family: cursive;
+    text-align: center;
 }

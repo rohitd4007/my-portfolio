@@ -43,6 +43,8 @@ export default function MyInfo() {
     return (
         <div className="hero-section">
             <nav className="navbar">
+                <div className='my-logo'>RD</div>
+
                 <button
                     className="hamburger"
                     onClick={() => setMenuOpen((open) => !open)}
@@ -51,18 +53,18 @@ export default function MyInfo() {
                     <span /><span /><span />
                 </button>
                 <ul className={menuOpen ? 'open' : ''}>
-                    <li onClick={() => setMenuOpen(false)}>Home</li>
-                    <li onClick={() => setMenuOpen(false)}>About</li>
-                    <li onClick={() => setMenuOpen(false)}>Projects</li>
-                    <li onClick={() => setMenuOpen(false)}>Articles</li>
-                    <li onClick={() => setMenuOpen(false)}>Skills</li>
-                    <li onClick={() => setMenuOpen(false)}>Contact</li>
+                    <li onClick={() => setMenuOpen(false)}> <a href="#home"> Home </a></li>
+                    <li onClick={() => setMenuOpen(false)}> <a href="#about"> About </a></li>
+                    <li onClick={() => setMenuOpen(false)}> <a href="#projects">Projects </a></li>
+                    <li onClick={() => setMenuOpen(false)}> <a href="#articles">Articles </a></li>
+                    <li onClick={() => setMenuOpen(false)}> <a href="#skills">Skills </a></li>
+                    <li onClick={() => setMenuOpen(false)}> <a href="#contact">Contact </a></li>
                 </ul>
             </nav>
             {menuOpen && <div className="backdrop" onClick={() => setMenuOpen(false)} />}
 
             <div className="container">
-                <div className="avatar">RD</div>
+                {/* <div className="avatar">RD</div> */}
                 <div className="intro-text">
                     <p className="hello">Hello,</p>
                     <h1 className="name">
@@ -75,6 +77,6 @@ export default function MyInfo() {
                     <button className="resume-button" onClick={() => handleDownload()}>Download My Resume</button>
                 </div>
             </div>
-        </div>
+        </div >
     );
 }
