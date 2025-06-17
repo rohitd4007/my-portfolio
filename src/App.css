@@ -16,3 +16,7 @@ body {
 .app-container {
     width: 100% !important;
 }
+
+.no-scroll {
+    overflow: hidden;
+}

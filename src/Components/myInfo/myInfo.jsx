@@ -15,6 +15,18 @@ export default function MyInfo() {
     const [charIndex, setCharIndex] = useState(0);
     const [menuOpen, setMenuOpen] = useState(false);
 
+    useEffect(() => {
+        if (menuOpen) {
+            document.body.classList.add('no-scroll');
+        } else {
+            document.body.classList.remove('no-scroll');
+        }
+        // Clean up the class when the component unmounts
+        return () => {
+            document.body.classList.remove('no-scroll');
+        };
+    }, [menuOpen]);
+
     const handleDownload = () => {
         const link = document.createElement('a');
         link.href = 'https://drive.google.com/file/d/14EXe-o9yfhyPH4mnAUw-hO-ZHLeiz4L-/view?usp=sharing'; // Replace with your actual resume link
@@ -68,7 +80,7 @@ export default function MyInfo() {
                 <div className="intro-text">
                     <p className="hello">Hello,</p>
                     <h1 className="name">
-                        I’M <span className="gradient">ROHIT DEVHARE</span>
+                        I'M <span className="gradient">ROHIT DEVHARE</span>
                     </h1>
                     <p className="tagline">
                         <span className="typing">{displayedText}</span>

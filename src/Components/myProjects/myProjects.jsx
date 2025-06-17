@@ -36,6 +36,12 @@ const MyProjects = () => {
                     <a href="https://rohitd4007.github.io/covid-chat-bot/" className="project-link">View Project</a>
                 </div>
             </div>
+            <div className="github-cta">
+                <p className="github-message">Find a more extensive collection of my projects and their source code on my GitHub!</p>
+                <a href="https://github.com/rohitd4007" target="_blank" rel="noopener noreferrer" className="github-link">
+                    Visit My GitHub Profile
+                </a>
+            </div>
         </div>
     );
 };

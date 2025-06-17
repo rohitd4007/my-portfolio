@@ -68,3 +68,64 @@
 .project-link:hover {
     background-color: #c0392b;
 }
+
+.github-cta {
+    margin-top: 40px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.08);
+    /* Slightly lighter background */
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.github-message {
+    font-size: 1.3em;
+    color: #e0e0e0;
+    /* Lighter text color */
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.github-link {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #a855f7;
+    /* Purple accent from gradients */
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border: 1px solid #a855f7;
+}
+
+.github-link:hover {
+    background-color: #8b45d9;
+    /* Darker purple on hover */
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(168, 85, 247, 0.4);
+}
+
+@media (max-width: 768px) {
+    .github-cta {
+        padding: 20px;
+    }
+
+    .github-message {
+        font-size: 1em;
+    }
+
+    .github-link {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+}
