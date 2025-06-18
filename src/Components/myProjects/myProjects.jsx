@@ -5,41 +5,65 @@ import pr121 from '../../Resource/pr121.png';
 import pr122 from '../../Resource/pr122.png'
 import pr123 from '../../Resource/pr123.png'
 
+const projectsData = [
+    {
+        id: 1,
+        name: "Tee Flect",
+        description: "A e-commerce application for T-shirts",
+        image: pr123,
+        alt: "tee-flect-app",
+        link: "https://tee-flect.netlify.app/"
+    },
+    {
+        id: 2,
+        name: "My Portfolio",
+        description: "A Web application to showcase my skills & recent work",
+        image: pr121,
+        alt: "Project 2",
+        link: "https://rohit-devhare-portfolio.netlify.app/"
+    },
+    {
+        id: 3,
+        name: "Test Your CS",
+        description: "A quiz application to test your knowledge of Computer Science concepts.",
+        image: pr1,
+        alt: "Test Your CS",
+        link: "https://test-you-cs.netlify.app/"
+    },
+    {
+        id: 4,
+        name: "Chat-Bot For Covid FAQ",
+        description: "Chatbot Application for Covid Related Queries",
+        image: pr122,
+        alt: "Project 3",
+        link: "https://rohitd4007.github.io/covid-chat-bot/"
+    }
+];
+
+const ctaData = {
+    message: "Find a more extensive collection of my projects and their source code on my GitHub!",
+    link: "https://github.com/rohitd4007",
+    linkText: "Visit My GitHub Profile"
+};
 
 const MyProjects = () => {
     return (
         <div className="projects-container">
             <h2 className="projects-heading">My Projects</h2>
             <div className="projects-grid">
-                <div className="project-card">
-                    <img src={pr123} alt="tte-flect-app" className="project-image" />
-                    <h3 className="project-name">Tee Flect</h3>
-                    <p className="project-description">A e-commerce application for T-shirts</p>
-                    <a href="https://tee-flect.netlify.app/" className="project-link">View Project</a>
-                </div>
-                <div className="project-card">
-                    <img src={pr121} alt="Project 2" className="project-image" />
-                    <h3 className="project-name">My Portfolio</h3>
-                    <p className="project-description">A Web application to showcase my skills & recent work</p>
-                    <a href="https://rohit-devhare-portfolio.netlify.app/" className="project-link">View Project</a>
-                </div>
-                <div className="project-card">
-                    <img src={pr1} alt="Test Your CS" className="project-image" />
-                    <h3 className="project-name">Test Your CS</h3>
-                    <p className="project-description">A quiz application to test your knowledge of Computer Science concepts.</p>
-                    <a href="https://test-you-cs.netlify.app/" className="project-link">View Project</a>
-                </div>
-                <div className="project-card">
-                    <img src={pr122} alt="Project 3" className="project-image" />
-                    <h3 className="project-name">Chat-Bot For Covid FAQ</h3>
-                    <p className="project-description">Chatbot Application for Covid Related Queries</p>
-                    <a href="https://rohitd4007.github.io/covid-chat-bot/" className="project-link">View Project</a>
-                </div>
+                {projectsData.map((project) => (
+                    <div key={project.id} className="project-card">
+                        <img src={project.image} alt={project.alt} className="project-image" />
+                        <h3 className="project-name">{project.name}</h3>
+                        <p className="project-description">{project.description}</p>
+                        <a href={project.link} className="project-link">View Project</a>
+                    </div>
+                ))}
             </div>
             <div className="github-cta">
-                <p className="github-message">Find a more extensive collection of my projects and their source code on my GitHub!</p>
-                <a href="https://github.com/rohitd4007" target="_blank" rel="noopener noreferrer" className="github-link">
-                    Visit My GitHub Profile
+                <p className="github-message">{ctaData.message}</p>
+                <a href={ctaData.link} target="_blank" rel="noopener noreferrer" className="github-link">
+                    {ctaData.linkText}
                 </a>
             </div>
         </div>

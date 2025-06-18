@@ -7,10 +7,12 @@
 }
 
 .skills-container h2 {
-    font-size: 32px;
-    margin-bottom: 40px;
-    font-weight: bold;
-    color: #ffffff;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 2px;
+    background: linear-gradient(90deg, #ff6b6b, #a855f7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .skills-grid {

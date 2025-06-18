@@ -13,16 +13,16 @@ const cards = [
     {
         type: 'education',
         entries: [
-            { icon: '🎓', title: 'Computer Science (BE)', institution: 'Sanjivani College', dates: '2015 - 2019' },
+            { icon: '🎓', title: 'Computer Science (BE)', institution: 'Sanjivani College of Engineering', dates: '2015 - 2019' },
             { icon: '🎓', title: 'Class 12 (Science)', institution: 'SSGM College', dates: '2014 - 2015' },
-            { icon: '🎓', title: 'Class 10', institution: 'XYZ School', dates: '2012 - 2014' }
+            { icon: '🎓', title: 'Class 10', institution: 'Sharda Vidya Mandir', dates: '2012 - 2014' }
         ]
     },
     {
         type: 'experience',
         entries: [
-            { icon: '💼', title: 'Software Developer', company: 'Bruviti K2', dates: '2021 - Present', desc: 'Customer assist chatbots' },
-            { icon: '💼', title: 'Software Engineer', company: 'GoodWorkLabs', dates: '2021 - 2023', desc: 'Quiz & coding platform' },
+            { icon: '💼', title: 'Software Developer', company: 'Bruviti K2 Technosoft', dates: '2023 - Present', desc: 'Customer assist AI chatbots' },
+            { icon: '💼', title: 'Software Engineer', company: 'GoodWorkLabs', dates: '2021 - 2023', desc: ["1. https://www.carandbike.com", "2. Quiz & Coding Test Platform"] },
             { icon: '💼', title: 'Software Engineer', company: 'Infosys', dates: '2019 - 2021', desc: 'Document management portal' }
         ]
     },
@@ -61,6 +61,7 @@ export default function MyExperience() {
                     <div
                         key={i}
                         className={`card ${i === index ? 'active' : ''}`}
+                        onClick={() => setIndex(i)}
                     >
                         {card.type === 'intro' && (
                             <div className="intro-card">
@@ -93,7 +94,13 @@ export default function MyExperience() {
                                         <div>
                                             <strong>{e.title} at {e.company}</strong>
                                             <span>{e.dates}</span>
-                                            <p>{e.desc}</p>
+                                            {Array.isArray(e.desc) ? (
+                                                e.desc.map((line, lineIdx) => (
+                                                    <p key={lineIdx}>{line}</p>
+                                                ))
+                                            ) : (
+                                                <p>{e.desc}</p>
+                                            )}
                                         </div>
                                     </div>
                                 ))}

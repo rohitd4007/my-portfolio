@@ -18,9 +18,9 @@ const ContactForm = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-
+        let apiUrl = "https://send-mail-beta.vercel.app/api/send-mail/"
         try {
-            const response = await fetch('https://send-mail-beta.vercel.app/api/send-mail/', {
+            const response = await fetch(apiUrl, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

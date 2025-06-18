@@ -6,7 +6,8 @@ import './myInfo.css'
 const roles = [
     'MERN-Stack Developer',
     'JavaScript Developer',
-    'Software Developer'
+    'Software Developer',
+    'Full Stack Developer'
 ];
 
 export default function MyInfo() {
