@@ -63,6 +63,7 @@
     padding: 2rem 1.5rem;
     transition: transform 0.4s, opacity 0.4s;
     opacity: 0.3;
+    cursor: pointer;
 }
 
 .card.active {
