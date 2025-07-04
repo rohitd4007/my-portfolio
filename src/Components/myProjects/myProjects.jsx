@@ -24,7 +24,7 @@ const projectsData = [
     },
     {
         id: 3,
-        name: "Test Your CS",
+        name: "Quiz Application",
         description: "A quiz application to test your knowledge of Computer Science concepts.",
         image: pr1,
         alt: "Test Your CS",
@@ -32,7 +32,7 @@ const projectsData = [
     },
     {
         id: 4,
-        name: "Chat-Bot For Covid FAQ",
+        name: "Chat-Bot Application",
         description: "Chatbot Application for Covid Related Queries",
         image: pr122,
         alt: "Project 3",
