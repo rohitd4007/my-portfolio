@@ -4,6 +4,7 @@ import pr1 from '../../Resource/pr1.png';
 import pr121 from '../../Resource/pr121.png';
 import pr122 from '../../Resource/pr122.png'
 import pr123 from '../../Resource/pr123.png'
+import pr113 from '../../Resource/pr113.png'
 
 const projectsData = [
     {
@@ -20,6 +21,14 @@ const projectsData = [
         description: "A Web application to showcase my skills & recent work",
         image: pr121,
         alt: "Project 2",
+        link: "https://rohit-devhare-portfolio.netlify.app/"
+    },
+    {
+        id: 2,
+        name: "Tick Tack Toe",
+        description: "Tick Tack Toe Multiplayer Game",
+        image: pr113,
+        alt: "Project 3",
         link: "https://rohit-devhare-portfolio.netlify.app/"
     },
     {
