@@ -31,7 +31,7 @@ export default function MyInfo() {
     const handleDownload = () => {
         const link = document.createElement('a');
         link.href = 'https://drive.google.com/file/d/14EXe-o9yfhyPH4mnAUw-hO-ZHLeiz4L-/view?usp=sharing'; // Replace with your actual resume link
-        link.download = 'My_Resume.pdf'; // 
+        link.download = 'Rohit Devhare.pdf'; // 
         link.click();
     };
 
