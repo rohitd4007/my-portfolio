@@ -5,34 +5,11 @@ import pr121 from '../../Resource/pr121.png';
 import pr122 from '../../Resource/pr122.png'
 import pr123 from '../../Resource/pr123.png'
 import pr113 from '../../Resource/pr113.png'
+import m112 from '../../Resource/m112.png'
 
 const projectsData = [
     {
         id: 1,
-        name: "Tee Flect",
-        description: "A e-commerce application for T-shirts",
-        image: pr123,
-        alt: "tee-flect-app",
-        link: "https://tee-flect.netlify.app/"
-    },
-    {
-        id: 2,
-        name: "My Portfolio",
-        description: "A Web application to showcase my skills & recent work",
-        image: pr121,
-        alt: "Project 2",
-        link: "https://rohit-devhare-portfolio.netlify.app/"
-    },
-    {
-        id: 2,
-        name: "Tick Tack Toe",
-        description: "Tick Tack Toe Multiplayer Game",
-        image: pr113,
-        alt: "Project 3",
-        link: "https://rohit-devhare-portfolio.netlify.app/"
-    },
-    {
-        id: 3,
         name: "Quiz Application",
         description: "A quiz application to test your knowledge of Computer Science concepts.",
         image: pr1,
@@ -40,7 +17,39 @@ const projectsData = [
         link: "https://test-you-cs.netlify.app/"
     },
     {
+        id: 2,
+        name: "Tee Flect",
+        description: "A e-commerce application for T-shirts",
+        image: pr123,
+        alt: "tee-flect-app",
+        link: "https://tee-flect.netlify.app/"
+    },
+    {
+        id: 3,
+        name: "My Portfolio",
+        description: "A Web application to showcase my skills & recent work",
+        image: pr121,
+        alt: "Project 2",
+        link: "https://rohit-devhare-portfolio.netlify.app/"
+    },
+    {
         id: 4,
+        name: "Tick Tack Toe",
+        description: "Tick Tack Toe Multiplayer Game",
+        image: pr113,
+        alt: "Project 3",
+        link: "https://rohit-devhare-portfolio.netlify.app/"
+    },
+    {
+        id: 5,
+        name: "Motocly",
+        description: "Application to find nearby mechanics, based on your location",
+        image: m112,
+        alt: "motocly",
+        link: "https://motocly.netlify.app/"
+    },
+    {
+        id: 6,
         name: "Chat-Bot Application",
         description: "Chatbot Application for Covid Related Queries",
         image: pr122,
