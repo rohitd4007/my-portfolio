@@ -139,6 +139,47 @@
     box-shadow: 0 0 10px #ff5ec4;
 }
 
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 1.2rem 0 0.5rem 0;
+}
+
+.social-icons a:nth-child(1) {
+    /* GitHub */
+    color: #333;
+}
+
+.social-icons a:nth-child(2) {
+    /* LinkedIn */
+    color: #0077b5;
+}
+
+.social-icons a:nth-child(3) {
+    /* Instagram */
+    color: #E4405F;
+}
+
+.social-icons a:nth-child(4) {
+    /* X/Twitter */
+    color: #0c5c6f;
+}
+
+.social-icons a {
+    font-size: 2rem;
+    transition: color 0.3s, transform 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.social-icons a:hover {
+    color: #f1f1f1;
+    transform: scale(1.18) rotate(-8deg);
+    text-shadow: 0 2px 12px #c1c1c1aa;
+}
+
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
@@ -152,8 +193,12 @@
     .intro-text {
         align-items: center;
     }
-}
 
+    .social-icons {
+        gap: 1.2rem;
+        font-size: 1.5rem;
+    }
+}
 
 
 /* navbar responsive */

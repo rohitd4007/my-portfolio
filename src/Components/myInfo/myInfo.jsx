@@ -87,6 +87,20 @@ export default function MyInfo() {
                         <span className="typing">{displayedText}</span>
                         <span className="cursor">|</span>
                     </p>
+                    <div className="social-icons">
+                        <a href="https://github.com/rohitd4007" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <i className="fab fa-github"></i>
+                        </a>
+                        <a href="https://in.linkedin.com/in/rohitdevhare07" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <i className="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://www.instagram.com/rohit_devhare_07_" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <i className="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://x.com/rohit_devhare" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+                            <i className="fab fa-x-twitter"></i>
+                        </a>
+                    </div>
                     <button className="resume-button" onClick={() => handleDownload()}>Download My Resume</button>
                 </div>
             </div>
