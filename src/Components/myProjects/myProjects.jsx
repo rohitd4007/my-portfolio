@@ -38,7 +38,7 @@ const projectsData = [
         description: "Tick Tack Toe Multiplayer Game",
         image: pr113,
         alt: "Project 3",
-        link: "https://rohit-devhare-portfolio.netlify.app/"
+        link: "https://tiik-tak-to.netlify.app/"
     },
     {
         id: 5,
