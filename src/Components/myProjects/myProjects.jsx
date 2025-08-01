@@ -6,6 +6,7 @@ import pr122 from '../../Resource/pr122.png'
 import pr123 from '../../Resource/pr123.png'
 import pr113 from '../../Resource/pr113.png'
 import m112 from '../../Resource/m112.png'
+import p22 from '../../Resource/p22.png'
 
 const projectsData = [
     {
@@ -55,7 +56,15 @@ const projectsData = [
         image: pr122,
         alt: "Project 3",
         link: "https://rohitd4007.github.io/covid-chat-bot/"
-    }
+    },
+    {
+        id: 7,
+        name: "MV Player(In Progress...)",
+        description: "Youtube Clone Video Player",
+        image: p22,
+        alt: "mv-player",
+        link: "https://mvplayer.netlify.app/"
+    },
 ];
 
 const ctaData = {
